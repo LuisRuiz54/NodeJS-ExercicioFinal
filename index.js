@@ -44,7 +44,7 @@ app.put('/tasks/:id', async (req, res) => {
   } 
 })
 
-// Delete task
+// Delete task + errors
 app.delete('/tasks/:id', async (req, res) => {
   const taskId = req.params.id
   const task = await tasks.findByPk(taskId)
